@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\BugTracer.exe.config
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\BugTracer.exe
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\BugTracer.pdb
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.csprojAssemblyReference.cache
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.Properties.Resources.resources
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.csproj.GenerateResource.cache
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.exe
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.pdb
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.login.resources
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\MySql.Data.dll
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\Google.Protobuf.dll
+C:\Users\user\Desktop\BugTracer\BugTracer\bin\Debug\MySql.Data.xml
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.csproj.CopyComplete
+C:\Users\user\Desktop\BugTracer\BugTracer\obj\Debug\BugTracer.create_users.resources
