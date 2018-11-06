@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,6 +45,46 @@ namespace BugTracer
                 Console.WriteLine("Bad input! Canceling request");
                 return;
             }
+        }
+
+       
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+
+            String connectionString;
+            connectionString = "server=localhost;database=bugtracker;user id=root;password=;integrated security=true";
+
+            MySqlConnection myOleDbConn = new MySqlConnection(connectionString);
+            myOleDbConn.Open();
+
+            String SQL = "Select * from createusers";
+            MySqlCommand mySqlDbCmd = new MySqlCommand(SQL, myOleDbConn);
+
+            try
+            {
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = mySqlDbCmd;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                BindingSource bSource = new BindingSource();
+
+                bSource.DataSource = dbdataset;
+                AllDataGridView.DataSource = bSource;
+                sda.Update(dbdataset);
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("error");
+            }
+
+
+
+
+
         }
     }
 }

@@ -39,8 +39,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.AllDataGridView = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -146,21 +147,33 @@
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "Select Status";
             // 
-            // dataGridView1
+            // AllDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(424, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(485, 213);
-            this.dataGridView1.TabIndex = 11;
+            this.AllDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AllDataGridView.Location = new System.Drawing.Point(424, 91);
+            this.AllDataGridView.Name = "AllDataGridView";
+            this.AllDataGridView.RowTemplate.Height = 28;
+            this.AllDataGridView.Size = new System.Drawing.Size(485, 213);
+            this.AllDataGridView.TabIndex = 11;
+            // 
+            // button2
+            // 
+            this.button2.AccessibleName = "viewtable";
+            this.button2.Location = new System.Drawing.Point(469, 326);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 38);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "View Table";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // create_users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AllDataGridView);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -174,7 +187,7 @@
             this.Controls.Add(this.label1);
             this.Name = "create_users";
             this.Text = "usersform";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +206,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView AllDataGridView;
+        private System.Windows.Forms.Button button2;
     }
 }
