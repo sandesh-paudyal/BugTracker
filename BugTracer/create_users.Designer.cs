@@ -41,6 +41,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.AllDataGridView = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,7 +155,7 @@
             this.AllDataGridView.Location = new System.Drawing.Point(424, 91);
             this.AllDataGridView.Name = "AllDataGridView";
             this.AllDataGridView.RowTemplate.Height = 28;
-            this.AllDataGridView.Size = new System.Drawing.Size(485, 213);
+            this.AllDataGridView.Size = new System.Drawing.Size(633, 213);
             this.AllDataGridView.TabIndex = 11;
             // 
             // button2
@@ -167,11 +169,35 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Brown;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(931, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(126, 38);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Logout";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(174, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // create_users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 450);
+            this.ClientSize = new System.Drawing.Size(1069, 550);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.AllDataGridView);
             this.Controls.Add(this.comboBox1);
@@ -187,6 +213,7 @@
             this.Controls.Add(this.label1);
             this.Name = "create_users";
             this.Text = "usersform";
+            this.Load += new System.EventHandler(this.create_users_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,5 +235,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView AllDataGridView;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
     }
 }

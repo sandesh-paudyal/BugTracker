@@ -86,5 +86,22 @@ namespace BugTracer
 
 
         }
+
+        private void create_users_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login log = new login();
+            log.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            ((form)this.)
+        }
     }
 }

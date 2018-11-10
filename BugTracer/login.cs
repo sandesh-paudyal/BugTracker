@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,11 +32,32 @@ namespace BugTracer
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+
+
+            String connectionString;
+            connectionString = "server=localhost;database=bugtracker;user id=root;password=;integrated security=true";
+
+            MySqlConnection myOleDbConn = new MySqlConnection(connectionString);
+            myOleDbConn.Open();
+
+            String SQL = "Select * from createusers where username = '" + txtuname.Text.Trim() + "' and password ='" + txtpassword.Text.Trim() + "'";
+
+            MySqlDataAdapter sda = new MySqlDataAdapter(SQL, myOleDbConn);
+
+            DataTable dtbl = new DataTable();
+            sda.Fill(dtbl);
+
             if (txtuname.Text != "" && txtpassword.Text != "")
             {
-                if (txtuname.Text == "admin" && txtpassword.Text == "admin")
+                
+                if (dtbl.Rows.Count == 1)
                 {
-                    MessageBox.Show("hello " + txtuname.Text);
+                    
+                    create_users cuser = new create_users();
+                    this.Hide();
+                    cuser.Show();
+
+                    
                 }
                 else
                 {
@@ -45,6 +67,11 @@ namespace BugTracer
             else {
                 MessageBox.Show("Please fill all field! ");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
